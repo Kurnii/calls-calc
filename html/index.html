@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="1 primer stranicy">
+    <meta name="author" content="Me">
+    <title>Calls Calculator</title>    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="container">
+      <div>
+        <input type="text"  value="0" class = "normal_call" style="width:30px"></input>
+        <button class="calls_button" onclick = "plus_function('.normal_call')" >Call +</button>
+        <button class="calls_button minus" onclick = "minus_function('.normal_call')">Call -</button>
+      </div>
+      <div>
+        <input type="text"  value="0" class = "small_call" style="width:30px"></input>
+        <button class="calls_button" onclick = "plus_function('.small_call')">Real Call +</button>
+        <button class="calls_button" onclick = "minus_function('.small_call')">Real Call -</button>
+      </div>
+      <div>
+        <input type="text"  value="0" class = "fake_call" style="width:30px"></input>
+        <button class="calls_button" onclick = "plus_function('.fake_call')">Fake +</button>
+        <button class="calls_button" onclick = "minus_function('.fake_call')">Fake -</button>
+      </div>
+      <div>
+        <input type="text"  value="0" class = "empty_call" style="width:30px"></input>
+        <button class="calls_button" onclick = "plus_function('.empty_call')">Empty Call +</button>
+        <button class="calls_button" onclick = "minus_function('.empty_call')">Empty Call -</button>
+      </div>
+      
+      
+      <!-- <div>
+        <input class="calls_quantity" default = '0'></input>
+      </div> -->
+      <div>
+        <button class="refresh" onclick = "refresh_function()">Refresh</button>
+      </div>
+    </div>
+    <script src="../js/script.js">
+     
+    </script>
+  </body>
+</html>
